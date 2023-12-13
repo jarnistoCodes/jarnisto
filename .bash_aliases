@@ -21,6 +21,7 @@ alias tothepi='ssh jarni@192.168.1.51'
 alias activate='source .venv/bin/activate'
 alias newvenv='python3 -m venv .venv'
 
+alias getscripts='git clone git@github.com:jarnistoCodes/scripts.git'
 alias tothelab="cd /mnt/c/Users/Jarni/Documents/python-projects"
 alias syncnotes="git -C ${NOTESDIR} pull; git -C ${NOTESDIR} add .; git -C ${NOTESDIR} status; git -C ${NOTESDIR} commit -am 'sync'; git -C ${NOTESDIR} push"
 
