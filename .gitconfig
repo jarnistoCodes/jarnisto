@@ -1,0 +1,26 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = jarni.olaerts@gmail.com
+	name = jarnistoCodes
+[core]
+	editor = nano
+	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = master
+[push]
+	default = simple
+[alias]
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	d = diff
+	dc = diff --cached
+	; log
+	l = log --pretty=format:'%Cred%h%Creset %Cgreen(%cs) %C(bold blue)<%an>%Creset - %s%C(yellow)%d%Creset' --abbrev-commit
+	; releases
+	r = log --tags --no-walk --pretty=format:'%Cred%h%Creset %Cgreen(%cs) %C(bold blue)<%an>%Creset - %s%C(yellow)%d%Creset' --abbrev-commit
+[pull]
+	rebase = true
